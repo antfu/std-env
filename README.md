@@ -90,6 +90,8 @@ You can also use individual named exports for each runtime detection:
 - `isNode`
 - `isBun`
 - `isFastly`
+- `isWebContainer`
+- `isStackBlitz`
 
 List of well known providers can be found from [./src/runtimes.ts](./src/runtimes.ts).
 

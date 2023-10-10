@@ -23,6 +23,8 @@ export const isLagon = !!globalThis.__lagon__;
 export const isNode = globalThis.process?.release?.name === "node";
 export const isBun = !!globalThis.Bun || !!globalThis.process?.versions?.bun;
 export const isFastly = !!globalThis.fastly;
+export const isWebContainer = !!globalThis.process?.versions?.webcontainer
+export const isStackBlitz = isWebContainer
 
 const runtimeChecks: [boolean, RuntimeName][] = [
   [isNetlify, "netlify"],
